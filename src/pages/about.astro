@@ -52,8 +52,9 @@ import { products, brands, facets } from '../lib/catalog';
 
 <style>
   .hero {
-    background: linear-gradient(180deg, #fff, var(--bg));
-    border-bottom: 1px solid var(--line);
+    background:
+      radial-gradient(50% 90% at 20% 30%, rgb(255 255 255 / 0.7), transparent 70%),
+      linear-gradient(160deg, var(--tint-1), var(--tint-2) 60%, var(--tint-3));
   }
   .hero-inner {
     display: grid;
@@ -63,7 +64,8 @@ import { products, brands, facets } from '../lib/catalog';
     padding-block: clamp(40px, 7vw, 80px);
   }
   .hero-inner img {
-    border-radius: 20px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
     aspect-ratio: 4 / 3;
     object-fit: cover;
     width: 100%;

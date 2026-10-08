@@ -67,9 +67,10 @@ const filters = [...counts].map(([name, count]) => ({ name, slug: slugify(name),
 
 <style>
   .head {
-    background: linear-gradient(180deg, #fff, var(--bg));
-    border-bottom: 1px solid var(--line);
-    padding-block: 40px 32px;
+    background:
+      radial-gradient(50% 120% at 85% 0%, rgb(255 255 255 / 0.7), transparent 70%),
+      linear-gradient(160deg, var(--tint-1), var(--tint-2));
+    padding-block: clamp(40px, 6vw, 72px) clamp(32px, 5vw, 56px);
   }
   .crumbs {
     font-size: 0.85rem;
@@ -83,7 +84,7 @@ const filters = [...counts].map(([name, count]) => ({ name, slug: slugify(name),
     margin: 0;
   }
   .listing {
-    padding-block: 28px 80px;
+    padding-block: 32px 96px;
   }
   .filters {
     display: flex;
