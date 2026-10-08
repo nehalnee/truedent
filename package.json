@@ -1,0 +1,19 @@
+{
+  "name": "truedent",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TrueDent - dental materials and equipment supplier in Libya",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "optimize-images": "node scripts/optimize-images.mjs"
+  },
+  "dependencies": {
+    "astro": "5.18.2"
+  },
+  "devDependencies": {
+    "sharp": "0.34.5"
+  }
+}

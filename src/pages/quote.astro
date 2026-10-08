@@ -1,0 +1,267 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import site from '../data/site.json';
+import { products } from '../lib/catalog';
+
+// Small lookup so the browser can show images for items in the saved list
+const index = Object.fromEntries(products.map((p) => [p.slug, { name: p.name, image: p.image }]));
+---
+
+<Base title="Your quote list">
+  <div class="wrap page">
+    <h1>Your quote list</h1>
+    <p class="lead">
+      Send this list to us on WhatsApp and we'll reply with current prices, availability and delivery to your clinic.
+    </p>
+
+    <div class="layout">
+      <div>
+        <ul class="items" data-items></ul>
+        <div class="empty" data-empty hidden>
+          <p>Your list is empty.</p>
+          <a href="/products" class="btn btn-primary">Browse products <Icon name="arrow" /></a>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <h2>Send your request</h2>
+        <form data-form>
+          <label>
+            Your name or clinic
+            <input name="name" autocomplete="organization" placeholder="e.g. Smile Dental Clinic" />
+          </label>
+          <label>
+            City
+            <input name="city" autocomplete="address-level2" placeholder="e.g. Benghazi" />
+          </label>
+          <label>
+            Notes
+            <textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea>
+          </label>
+          <button class="btn btn-whatsapp" type="submit" data-send disabled>
+            <Icon name="whatsapp" /> Send on WhatsApp
+          </button>
+        </form>
+        <p class="alt">
+          Prefer to call? <a href={`tel:${site.phones[0].tel}`}>{site.phones[0].display}</a> or
+          <a href={`tel:${site.phones[1].tel}`}>{site.phones[1].display}</a>
+        </p>
+      </aside>
+    </div>
+  </div>
+</Base>
+
+<script is:inline define:vars={{ index, whatsapp: site.whatsapp }}>
+  window.__quote = { index, whatsapp };
+</script>
+
+<script>
+  import { readQuote, writeQuote, whatsappLink } from '../scripts/quote';
+
+  const { index, whatsapp } = (window as any).__quote as {
+    index: Record<string, { name: string; image: string }>;
+    whatsapp: string;
+  };
+  const list = document.querySelector<HTMLUListElement>('[data-items]')!;
+  const empty = document.querySelector<HTMLElement>('[data-empty]')!;
+  const send = document.querySelector<HTMLButtonElement>('[data-send]')!;
+  const form = document.querySelector<HTMLFormElement>('[data-form]')!;
+
+  function render() {
+    const items = readQuote().filter((i) => index[i.slug]);
+    list.replaceChildren(
+      ...items.map((item) => {
+        const li = document.createElement('li');
+        li.className = 'item';
+        const info = index[item.slug];
+        li.innerHTML = `
+          <img alt="" width="72" height="72">
+          <a class="name"></a>
+          <input type="number" min="1" max="999" aria-label="Quantity">
+          <button class="remove" aria-label="Remove">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4h8v2M19 6l-1 14H6L5 6"/></svg>
+          </button>`;
+        li.querySelector('img')!.src = info.image;
+        const link = li.querySelector<HTMLAnchorElement>('.name')!;
+        link.href = `/product/${item.slug}`;
+        link.textContent = info.name;
+        const qty = li.querySelector('input')!;
+        qty.value = String(item.qty);
+        qty.addEventListener('change', () => {
+          const all = readQuote();
+          const found = all.find((i) => i.slug === item.slug);
+          if (found) found.qty = Math.max(1, Math.min(999, Number(qty.value) || 1));
+          writeQuote(all);
+        });
+        li.querySelector('.remove')!.addEventListener('click', () => {
+          writeQuote(readQuote().filter((i) => i.slug !== item.slug));
+        });
+        return li;
+      }),
+    );
+    empty.hidden = items.length > 0;
+    send.disabled = items.length === 0;
+  }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const items = readQuote().filter((i) => index[i.slug]);
+    if (!items.length) return;
+    const data = new FormData(form);
+    const lines = [
+      'Hello TrueDent, I would like a quote for:',
+      '',
+      ...items.map((i) => `• ${i.qty} × ${index[i.slug].name}`),
+    ];
+    const name = String(data.get('name') ?? '').trim();
+    const city = String(data.get('city') ?? '').trim();
+    const notes = String(data.get('notes') ?? '').trim();
+    if (name || city) lines.push('', [name, city].filter(Boolean).join(' – '));
+    if (notes) lines.push('', `Notes: ${notes}`);
+    window.open(whatsappLink(whatsapp, lines.join('\n')), '_blank', 'noopener');
+  });
+
+  document.addEventListener('quote:change', render);
+  render();
+</script>
+
+<style>
+  .page {
+    padding-block: 40px 80px;
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 2rem;
+    align-items: start;
+    margin-top: 2rem;
+  }
+  @media (max-width: 820px) {
+    .layout {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+  .items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .items :global(.item) {
+    display: grid;
+    grid-template-columns: 72px minmax(0, 1fr) 76px 40px;
+    align-items: center;
+    gap: 1rem;
+    padding: 12px 16px 12px 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .items :global(img) {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 6px;
+  }
+  .items :global(.name) {
+    font-weight: 700;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .items :global(input) {
+    width: 100%;
+    height: 40px;
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    text-align: center;
+    font: inherit;
+    font-weight: 700;
+  }
+  .items :global(.remove) {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 0;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+  }
+  .items :global(.remove:hover) {
+    background: #fde8e8;
+    color: #b42318;
+  }
+  @media (max-width: 480px) {
+    .items :global(.item) {
+      grid-template-columns: 56px minmax(0, 1fr) 40px;
+      gap: 0.75rem;
+    }
+    .items :global(img) {
+      width: 56px;
+      height: 56px;
+      grid-row: span 2;
+    }
+    .items :global(input) {
+      grid-column: 2;
+      width: 80px;
+    }
+    .items :global(.remove) {
+      grid-column: 3;
+      grid-row: 1 / span 2;
+    }
+  }
+  .empty {
+    padding: 48px 24px;
+    text-align: center;
+    background: #fff;
+    border: 1px dashed var(--line);
+    border-radius: var(--radius);
+    color: var(--muted);
+  }
+  .panel {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    padding: 28px;
+    position: sticky;
+    top: 92px;
+  }
+  .panel h2 {
+    font-size: 1.25rem;
+  }
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  label {
+    display: grid;
+    gap: 0.35rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+  input,
+  textarea {
+    font: inherit;
+    padding: 0.7rem 0.85rem;
+    border: 1.5px solid var(--line);
+    border-radius: 10px;
+    background: var(--bg);
+    color: var(--ink);
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: #fff;
+  }
+  .alt {
+    font-size: 0.88rem;
+    color: var(--muted);
+    margin: 1.25rem 0 0;
+  }
+</style>

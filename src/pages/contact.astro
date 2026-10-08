@@ -1,0 +1,114 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import site from '../data/site.json';
+---
+
+<Base title="Contact us" description={`Contact TrueDent in ${site.city} by phone, WhatsApp or email.`}>
+  <div class="wrap page">
+    <span class="eyebrow">Contact</span>
+    <h1>Talk to TrueDent</h1>
+    <p class="lead">
+      Questions about a product, a price or delivery? Reach us the way that suits you. WhatsApp is usually fastest.
+    </p>
+
+    <div class="cards">
+      <a class="card wa" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener">
+        <Icon name="whatsapp" />
+        <h2>WhatsApp</h2>
+        <p>Send us a message or your quote list.</p>
+        <span>{site.phones[0].display}</span>
+      </a>
+      {site.phones.map((p, i) => (
+        <a class="card" href={`tel:${p.tel}`}>
+          <Icon name="phone" />
+          <h2>{i === 0 ? 'Call us' : 'Second line'}</h2>
+          <p>Speak to our team directly.</p>
+          <span>{p.display}</span>
+        </a>
+      ))}
+      <a class="card" href={`mailto:${site.email}`}>
+        <Icon name="mail" />
+        <h2>Email</h2>
+        <p>For invoices and larger orders.</p>
+        <span>{site.email}</span>
+      </a>
+    </div>
+
+    <div class="where">
+      <Icon name="pin" />
+      <p>Based in <strong>{site.city}</strong>, delivering dental supplies to clinics across Libya.</p>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .page {
+    padding-block: 48px 88px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 2.5rem;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 28px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    color: var(--ink);
+    text-decoration: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .card:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+  }
+  .card :global(svg) {
+    width: 30px;
+    height: 30px;
+    color: var(--brand);
+    margin-bottom: 0.75rem;
+  }
+  .card.wa :global(svg) {
+    color: #1fa855;
+  }
+  .card h2 {
+    font-size: 1.15rem;
+    margin: 0;
+  }
+  .card p {
+    margin: 0 0 0.75rem;
+    color: var(--muted);
+    font-size: 0.92rem;
+  }
+  .card span {
+    margin-top: auto;
+    font-weight: 700;
+    color: var(--brand);
+    overflow-wrap: anywhere;
+  }
+  .where {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 2rem;
+    padding: 20px 24px;
+    background: var(--accent-soft);
+    border-radius: var(--radius);
+    color: var(--ink-soft);
+  }
+  .where p {
+    margin: 0;
+  }
+  .where :global(svg) {
+    width: 24px;
+    height: 24px;
+    color: var(--accent);
+    flex: none;
+  }
+</style>

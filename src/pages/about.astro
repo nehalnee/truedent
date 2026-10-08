@@ -1,0 +1,125 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import site from '../data/site.json';
+import { products, brands, facets } from '../lib/catalog';
+---
+
+<Base title="About us">
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow">About TrueDent</span>
+        <h1>A specialist dental supplier, built for Libyan clinics.</h1>
+        <p class="lead">{site.description}</p>
+      </div>
+      <img src="/images/site/ozkan-guner-fpsaa37uh_w-unsplash-min-scaled.webp" alt="Dental unit handpieces in a clinic" width="1920" height="1280" />
+    </div>
+  </section>
+
+  <section class="wrap section values">
+    <div>
+      <h2>What we offer</h2>
+      <p class="lead">
+        The best source for dental professionals in need of high-quality dental supplies. Our carefully curated
+        collection features a vast range of dental products and equipment that cater to every dentist's specific needs.
+      </p>
+    </div>
+    <ul>
+      <li>
+        <strong>{facets('Dental Equipment').length} equipment categories</strong>
+        <span>From rotary motors and apex locators to radiology, lasers and implant motors.</span>
+      </li>
+      <li>
+        <strong>{brands.length} material brands</strong>
+        <span>{brands.join(', ')}, covering endodontics, restorations and cementation.</span>
+      </li>
+      <li>
+        <strong>{products.length} products and growing</strong>
+        <span>Can't find something? We source dental materials and equipment on request.</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="wrap cta">
+    <h2>Ready to equip your clinic?</h2>
+    <div class="actions">
+      <a href="/products" class="btn btn-light">Browse products <Icon name="arrow" /></a>
+      <a href={`https://wa.me/${site.whatsapp}`} class="btn btn-whatsapp" target="_blank" rel="noopener"><Icon name="whatsapp" /> WhatsApp us</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    background: linear-gradient(180deg, #fff, var(--bg));
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+    padding-block: clamp(40px, 7vw, 80px);
+  }
+  .hero-inner img {
+    border-radius: 20px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    width: 100%;
+  }
+  @media (max-width: 820px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+  .values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+  }
+  @media (max-width: 820px) {
+    .values {
+      grid-template-columns: 1fr;
+    }
+  }
+  .values ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+  }
+  .values li {
+    display: grid;
+    gap: 0.25rem;
+    padding: 22px 24px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--accent);
+    border-radius: 12px;
+  }
+  .values span {
+    color: var(--ink-soft);
+  }
+  .cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 88px;
+    padding: clamp(28px, 5vw, 48px);
+    border-radius: 24px;
+    background: var(--brand);
+    color: #fff;
+  }
+  .cta h2 {
+    margin: 0;
+  }
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+</style>

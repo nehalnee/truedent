@@ -1,0 +1,133 @@
+---
+import ProductCard from './ProductCard.astro';
+import { facetOf, slugify, type Product } from '../lib/catalog';
+
+interface Props {
+  title: string;
+  intro: string;
+  items: Product[];
+  facetLabel: string;
+}
+const { title, intro, items, facetLabel } = Astro.props;
+
+const counts = new Map<string, number>();
+for (const p of items) counts.set(facetOf(p), (counts.get(facetOf(p)) ?? 0) + 1);
+const filters = [...counts].map(([name, count]) => ({ name, slug: slugify(name), count }));
+---
+
+<section class="head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / <span>{title}</span></nav>
+    <h1>{title}</h1>
+    <p class="lead">{intro}</p>
+  </div>
+</section>
+
+<section class="wrap listing">
+  <div class="filters" role="group" aria-label={`Filter by ${facetLabel}`}>
+    <button class="filter" data-filter="" aria-pressed="true">All <span>{items.length}</span></button>
+    {filters.map((f) => (
+      <button class="filter" data-filter={f.slug} aria-pressed="false">
+        {f.name} <span>{f.count}</span>
+      </button>
+    ))}
+  </div>
+  <p class="result" aria-live="polite"><span data-shown>{items.length}</span> products</p>
+  <div class="grid" data-grid>
+    {items.map((p) => <ProductCard product={p} />)}
+  </div>
+</section>
+
+<script>
+  const buttons = [...document.querySelectorAll<HTMLButtonElement>('[data-filter]')];
+  const cards = [...document.querySelectorAll<HTMLElement>('[data-grid] [data-facet]')];
+  const shown = document.querySelector('[data-shown]')!;
+
+  function apply(slug: string, push = true) {
+    if (slug && !buttons.some((b) => b.dataset.filter === slug)) slug = '';
+    buttons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.filter === slug)));
+    let n = 0;
+    cards.forEach((c) => {
+      const match = !slug || c.dataset.facet === slug;
+      c.hidden = !match;
+      if (match) n++;
+    });
+    shown.textContent = String(n);
+    if (push) {
+      const url = new URL(location.href);
+      if (slug) url.searchParams.set('type', slug);
+      else url.searchParams.delete('type');
+      history.replaceState(null, '', url);
+    }
+  }
+
+  buttons.forEach((b) => b.addEventListener('click', () => apply(b.dataset.filter ?? '')));
+  apply(new URLSearchParams(location.search).get('type') ?? '', false);
+</script>
+
+<style>
+  .head {
+    background: linear-gradient(180deg, #fff, var(--bg));
+    border-bottom: 1px solid var(--line);
+    padding-block: 40px 32px;
+  }
+  .crumbs {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .crumbs a {
+    color: var(--muted);
+  }
+  .head .lead {
+    margin: 0;
+  }
+  .listing {
+    padding-block: 28px 80px;
+  }
+  .filters {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scrollbar-width: thin;
+  }
+  .filter {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 0.95rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink-soft);
+    font: inherit;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  .filter span {
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .filter:hover {
+    border-color: var(--accent);
+  }
+  .filter[aria-pressed='true'] {
+    background: var(--brand);
+    border-color: var(--brand);
+    color: #fff;
+  }
+  .filter[aria-pressed='true'] span {
+    color: #b9e3dc;
+  }
+  .result {
+    color: var(--muted);
+    font-size: 0.88rem;
+    margin: 1rem 0;
+  }
+  .grid :global([hidden]) {
+    display: none;
+  }
+</style>

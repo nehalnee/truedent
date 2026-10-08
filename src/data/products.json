@@ -1,0 +1,1534 @@
+[
+    {
+        "slug":  "ed-6",
+        "name":  "ED 6",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Endodontic Tips"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "12",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/ed6.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003ch3\u003eFunction\u003c/h3\u003e\u003cul\u003e\u003cli\u003eRemoval Of Broken File\u003c/li\u003e\u003cli\u003eTHIN \u0026amp; Sharp TIP\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 10:48:06"
+    },
+    {
+        "slug":  "ed62",
+        "name":  "ED62",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Endodontic Tips"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "25",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/ed62.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003ch3\u003eFunction\u003c/h3\u003e\u003cul\u003e\u003cli\u003eActivation of Irrigation\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 10:58:30"
+    },
+    {
+        "slug":  "s6",
+        "name":  "S6",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Multi-Function Ultra-Sonic Scaler"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/s-6.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eThe D-600 and S-6 have an intelligent degenerative feedback that automatically adjusts the power it has an ultra waterproof screen as well as 5 tips along with 1 irrigation tip. The U-600 has a water\u003c/b\u003e \u003cb\u003esupply system.\u003c/b\u003e\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 10:58:34"
+    },
+    {
+        "slug":  "d600-multi-function-ultra-sonic-scaler",
+        "name":  "D600 multi-function Ultra-Sonic scaler",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Multi-Function Ultra-Sonic Scaler"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "15",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/d600-multifunction.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eThe D-600 and S-6 have an intelligent degenerative feedback that automatically adjusts the power it has an ultra waterproof screen as well as 5 tips along with 1 irrigation tip. The U-600 has a water\u003c/b\u003e \u003cb\u003esupply system.\u003c/b\u003e\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 11:22:40"
+    },
+    {
+        "slug":  "o-light-plus",
+        "name":  "O-LIGHT PLUS",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Light Cure"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "30",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/o-light-plus.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eWith anti-shock metal head\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 12:20:04"
+    },
+    {
+        "slug":  "b-cure-plus",
+        "name":  "B-CURE PLUS",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Light Cure"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "45",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/b-cure-plus.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eWith five modes of curing.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 12:21:23"
+    },
+    {
+        "slug":  "fi-gi-fi-condenser",
+        "name":  "Fi-Gi \u0026 Fi-Condenser",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Obturation System"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "45",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/obturation-system.webp",
+        "gallery":  [
+                        "/images/products/obturation-system-2.webp",
+                        "/images/products/obturation-system-3.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 12:23:25"
+    },
+    {
+        "slug":  "endo-matic-with-built-in-apex-locater",
+        "name":  "ENDO-MATIC with Built-in Apex Locater",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Rotary Motors",
+                           "Apex Locater"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/endo-matic-with-builtin-apex-locater-scaled.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eCordless Endo Motor with combined length determination.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 13:18:02"
+    },
+    {
+        "slug":  "dpex-v-5th-generation-apex-locater",
+        "name":  "DPEX V 5th Generation Apex Locater",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Apex Locater",
+                           "apex locater with rotary motor"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "34",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/dpexv5.webp",
+        "gallery":  [
+                        "/images/products/dpexv5-1.webp",
+                        "/images/products/dpexv5-2.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eThis device eliminates interference by the data processing system (DSP) and comprises a high-quality screen and a battery of 750 mAh. In addition to the high processor for more speed and accuracy.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 13:20:21"
+    },
+    {
+        "slug":  "e-com",
+        "name":  "E-Com+",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Rotary Motors"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "34",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/ecom.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 13:22:49"
+    },
+    {
+        "slug":  "endo-gold",
+        "name":  "Endo Gold",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Rotary Motors"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "45",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/e-com.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "\u003cp\u003ePretium diam ornare! Architecto occaecati tempor aptent cum nesciunt dignissimos parturient a. Adipisicing placeat quibusdam. Pretium diam ornare! Architecto occaecati tempor aptent cum nesciunt.\u003c/p\u003e",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 13:24:06"
+    },
+    {
+        "slug":  "endo-pace",
+        "name":  "Endo Pace",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Rotary Motors"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "00",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/endo-pace.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "\u003cp\u003eWoodpecker brushless Endo Motor\u003c/p\u003e",
+        "description":  "\u003cp\u003eWoodpecker brushless Endo Motor\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2019-01-23 13:25:49"
+    },
+    {
+        "slug":  "ed-12",
+        "name":  "ED 12",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Endodontic Tips"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "12",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/ed12.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cstrong\u003eFunction:\u003c/strong\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eEXPOSING THE ROOT CANAL ORIFICE\u003c/li\u003e\u003cli\u003eMB2 Specialist\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 22:52:35"
+    },
+    {
+        "slug":  "ed-3d",
+        "name":  "ED 3D",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Endodontic Tips"
+                       ],
+        "comingSoon":  false,
+        "featured":  true,
+        "price":  null,
+        "originalWpPrice":  "15",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/ed6.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003ch3\u003eFunction\u003c/h3\u003e\u003cul\u003e\u003cli\u003eRemoval of calcification in the root canal\u003c/li\u003e\u003cli\u003eGutta Percha Removal\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 22:55:54"
+    },
+    {
+        "slug":  "ap-plus",
+        "name":  "AP-PLUS",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Air Polisher Plus"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/ap-plus-min.webp",
+        "gallery":  [
+                        "/images/products/screenshot-2023-07-18-010330.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 22:58:25"
+    },
+    {
+        "slug":  "wpp-super-with-chlorhexidine",
+        "name":  "WPP- SUPER with Chlorhexidine",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Air-Polisher Powder"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/wpp-super-with-chlorhexidine.webp",
+        "gallery":  [
+                        "/images/products/screenshot-2023-07-18-012134.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:11:56"
+    },
+    {
+        "slug":  "wpp-gentle-mini-for-implant-maintenance",
+        "name":  "WPP-GENTLE MINI for Implant Maintenance",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Air-Polisher Powder"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/wpp-gntel-mini-for-implant-maintenance.webp",
+        "gallery":  [
+                        "/images/products/screenshot-2023-07-18-012607.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:24:11"
+    },
+    {
+        "slug":  "wpp-fast-for-fast-rapid-polishing",
+        "name":  "WPP-FAST for Fast \u0026 Rapid Polishing",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Air-Polisher Powder"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/wpp-fast-for-fast-rapid-polishing.webp",
+        "gallery":  [
+                        "/images/products/screenshot-2023-07-18-012953.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:28:43"
+    },
+    {
+        "slug":  "ai-ray-portable-x-ray-machine",
+        "name":  "Ai-Ray Portable X-Ray Machine",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Radiology"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/ai-ray-portable-x-ray-machine.webp",
+        "gallery":  [
+                        "/images/products/ai-ray-portable-x-ray-machine2.webp",
+                        "/images/products/screenshot-2023-07-18-013302.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:31:08"
+    },
+    {
+        "slug":  "psp-free-scan",
+        "name":  "PSP FREE SCAN",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Radiology"
+                       ],
+        "comingSoon":  true,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/psp-free-scan.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:35:16"
+    },
+    {
+        "slug":  "kp-u-sensor-with-golden-size",
+        "name":  "KP U-SENSOR with Golden Size",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Radiology"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/kp-u-sensor-with-golden-size.webp",
+        "gallery":  [
+                        "/images/products/kp-u-sensor-with-golden-size3.webp",
+                        "/images/products/kp-u-sensor-with-golden-size2-min.webp",
+                        "/images/products/kp-u-sensor-with-golden-size6.webp",
+                        "/images/products/kp-u-sensor-with-golden-size5.webp",
+                        "/images/products/kp-u-sensor-with-golden-size4.webp",
+                        "/images/products/kp-u-sensor-with-golden-size7-min.webp",
+                        "/images/products/screenshot-2023-07-18-013613.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:43:05"
+    },
+    {
+        "slug":  "lx-16-diode-laser",
+        "name":  "LX 16 Diode Laser",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Laser"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/lx-16-diode-laser.webp",
+        "gallery":  [
+                        "/images/products/screenshot-2023-07-18-014613.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:45:19"
+    },
+    {
+        "slug":  "surgic-touch-3rd-generation-piezo-surgery",
+        "name":  "Surgic Touch 3rd Generation Piezo-Surgery",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Piezo-Surgery"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/surgic-touch.webp",
+        "gallery":  [
+                        "/images/products/surgic-touch1.webp",
+                        "/images/products/surgic-touch2.webp",
+                        "/images/products/surgic-touch3.webp",
+                        "/images/products/surgic-touch4.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cul\u003e\u003cli\u003e7-inch touch screen\u003c/li\u003e\u003cli\u003eHigh-Performance Handpiece\u003c/li\u003e\u003c/ul\u003e\u003cul\u003e\u003cli\u003eMultifunction Paddle\u003c/li\u003e\u003cli\u003e2 Tips Kit\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:47:50"
+    },
+    {
+        "slug":  "implanter",
+        "name":  "Implanter",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Implant Motor"
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/implanter.webp",
+        "gallery":  [
+                        "/images/products/implanter1.webp",
+                        "/images/products/implanter2.webp",
+                        "/images/products/surgic-touch3.webp",
+                        "/images/products/implanter4.webp",
+                        "/images/products/implanter5.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cul\u003e\u003cli\u003eMute Peristaltic Pump\u003c/li\u003e\u003cli\u003e7-inch colored touchscreen\u003c/li\u003e\u003c/ul\u003e\u003cul\u003e\u003cli\u003eMultifunction Paddle\u003c/li\u003e\u003cli\u003eErgonomic powerful contra angle\u003c/li\u003e\u003cli\u003eImported powerful Swiss Motor\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-17 23:56:02"
+    },
+    {
+        "slug":  "implant-air",
+        "name":  "Implant Air",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Implant Motor"
+                       ],
+        "comingSoon":  true,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  null,
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/implant-air-scaled.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-18 00:01:50"
+    },
+    {
+        "slug":  "isee-9000",
+        "name":  "iSee 9000",
+        "group":  "Dental Equipment",
+        "brand":  null,
+        "categories":  [
+                           "Surgical Microscope"
+                       ],
+        "comingSoon":  true,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  null,
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/isee-9000.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-18 00:04:27"
+    },
+    {
+        "slug":  "mta-cem-s",
+        "name":  "MTA Cem S",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/mta-cem-s.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eIndication:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eAs Root canal filling material\u003c/li\u003e\u003cli\u003eRoot canal sealing\u003c/li\u003e\u003cli\u003eRepair of root canal\u003c/li\u003e\u003cli\u003eInternal resorption\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 10:41:02"
+    },
+    {
+        "slug":  "mta-cem-lc",
+        "name":  "MTA Cem Lc",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/untitled-design-1.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eLIGHT CURED SILICATE PULP PROTECTOR CAVITY LINER\u003c/p\u003e\u003cp\u003e\u003cb\u003eIndication:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003ePulp capping \u0026amp; Liner\u003c/li\u003e\u003cli\u003eAlkaline PH- Promote healing\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 10:44:21"
+    },
+    {
+        "slug":  "t-seal",
+        "name":  "T-Seal",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/t-seal-min.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eEpoxy resin root canal sealer\u003c/p\u003e\u003cp\u003e\u003cb\u003eIndication:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003ePermeant Obturation of root canal in combination with G.p\u003c/li\u003e\u003cli\u003eAlkaline PH- Promote healing\u003c/li\u003e\u003c/ul\u003e\u003cp\u003e\u003cb\u003eBenefits:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eContain Calcium silicate MTA\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 10:54:09"
+    },
+    {
+        "slug":  "t-edta",
+        "name":  "T-EDTA",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/untitled-design-2.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eEDTA 19% \u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003eIndication:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eRemoval of inorganic substance by chelation “Ca”\u003c/li\u003e\u003c/ul\u003e\u003cp\u003e\u003cb\u003ePackage:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003e7Gm *2\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 10:55:08"
+    },
+    {
+        "slug":  "t-pex",
+        "name":  "T-Pex",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/untitled-design-3.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eCalcium Hydroxide with Iodoform\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003eAdvantage:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eWeeping canal apexification\u003c/li\u003e\u003cli\u003eExcellent Antibacterial effect\u003c/li\u003e\u003c/ul\u003e\u003cul\u003e\u003cli\u003ePre-Mixed paste 2.2gram\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 10:57:47"
+    },
+    {
+        "slug":  "t-paste",
+        "name":  "T-PASTE",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/untitled-design-4.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eCalcium Hydroxide with Barium sulfate\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003eIndication:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eWater Soluble\u003c/li\u003e\u003cli\u003eEasy cleaning \u0026amp; removing\u003c/li\u003e\u003cli\u003e2.2 Gram pre-mixed paste\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:00:33"
+    },
+    {
+        "slug":  "t-com-flow",
+        "name":  "T-COM Flow",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/t-com-flow.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eFlowable Nano-hybrid composite \u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003eIndication:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eRestoration of the invasive cavity\u003c/li\u003e\u003cli\u003ePit \u0026amp; Fissure sealing\u003c/li\u003e\u003cli\u003eBase \u0026amp; Liner for indirect restoration\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:03:42"
+    },
+    {
+        "slug":  "mta-cem",
+        "name":  "MTA CEM",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/untitled-design-5.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eMTA CEM POWDER\u003c/b\u003e\u003cb\u003e 1 gram\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003eMineral trioxide aggregate\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eEndodontic repairer material Is a powder consisting of hydrophilic particles that set in the presence of water. Hydration of the powder creates a colloidal gel that solidifies to form a strong impermeable barrier that fully cures over a four-week period\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:03:51"
+    },
+    {
+        "slug":  "t-etchant",
+        "name":  "T-ETCHANT",
+        "group":  "Dental Material",
+        "brand":  "Nexobio",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/untitled-design-6.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eT-\u003c/b\u003e\u003cb\u003eranscen\u003c/b\u003e\u003cb\u003e temp \u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003ec\u0026amp;b - light cured single component sculptable resin\u003c/b\u003e\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:03:54"
+    },
+    {
+        "slug":  "vittra-aps-unique",
+        "name":  "Vittra APS Unique",
+        "group":  "Dental Material",
+        "brand":  "FGM",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/vittra-aps-unique2.webp",
+        "gallery":  [
+                        "/images/products/vittra-aps-unique1.webp",
+                        "/images/products/vittra-aps-unique.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:14:10"
+    },
+    {
+        "slug":  "vittra-aps-unique-flow",
+        "name":  "Vittra APS Unique Flow",
+        "group":  "Dental Material",
+        "brand":  "FGM",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/vittra-aps-unique-flow2.webp",
+        "gallery":  [
+                        "/images/products/vittra-aps-unique-flow.webp",
+                        "/images/products/vittra-aps-unique-flow3.webp",
+                        "/images/products/vittra-aps-unique-flow4.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eUnichromatic light-curing fluid composite resin\u003c/p\u003e\u003cul\u003e\u003cli\u003echameleon effect\u003c/li\u003e\u003cli\u003eunichromatic\u003c/li\u003e\u003cli\u003eBPA Free\u003c/li\u003e\u003cli\u003eExclusive APS Technology\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:18:36"
+    },
+    {
+        "slug":  "ambar-aps-universal",
+        "name":  "Ambar APS Universal",
+        "group":  "Dental Material",
+        "brand":  "FGM",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/ambar-aps-universal.webp",
+        "gallery":  [
+                        "/images/products/ambar-aps-universal1.webp",
+                        "/images/products/ambar-aps-universal2.webp",
+                        "/images/products/ambar-aps-universal3.webp"
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:19:03"
+    },
+    {
+        "slug":  "alicem-cimento-dual",
+        "name":  "Alicem Cimento Dual",
+        "group":  "Dental Material",
+        "brand":  "FGM",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/alicem-cimento-dual.webp",
+        "gallery":  [
+                        "/images/products/alicem-cimento-dual2.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eBenefits:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003cb\u003eVersatility: \u003c/b\u003eExcellent adhesion to different surfaces\u003c/li\u003e\u003cli\u003e\u003cb\u003eRadiopacity: \u003c/b\u003ePossibility of radiographic diagnosis.\u003c/li\u003e\u003cli\u003e\u003cb\u003eDual curing: \u003c/b\u003eLight curing and chemical curing for areas where light does not fully reach.\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:19:06"
+    },
+    {
+        "slug":  "allcem-veneer-aps",
+        "name":  "Allcem Veneer APS",
+        "group":  "Dental Material",
+        "brand":  "FGM",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/allcem-veneer-aps.webp",
+        "gallery":  [
+                        "/images/products/allcem-veneer-aps2.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eLight-curing resin cement for cementation of ceramic veneers and no-prep veneers.\u003c/p\u003e\u003cul\u003e\u003cli\u003ePredictability of results\u003c/li\u003e\u003cli\u003eEsthetic longevity\u003c/li\u003e\u003cli\u003eFluorescence\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:19:09"
+    },
+    {
+        "slug":  "condac-porcelana",
+        "name":  "Condac Porcelana",
+        "group":  "Dental Material",
+        "brand":  "FGM",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/condac-porcelana.webp",
+        "gallery":  [
+                        "/images/products/condac-porcelana2.webp",
+                        "/images/products/condac-porcelana3.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003eLow-viscosity gel containing hydrofluoric acid at 10% for etching porcelain.\u003c/b\u003e\u003c/p\u003e\u003cp\u003e\u003cb\u003eBenefits:\u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003e\u003cb\u003eExcellent \u003c/b\u003e\u003cb\u003econsistency: \u003c/b\u003eEasy application: does not run off the application site.\u003c/li\u003e\u003cli\u003e\u003cb\u003eGood water \u003c/b\u003e\u003cb\u003esolubility: \u003c/b\u003eEasy removal.\u003c/li\u003e\u003c/ul\u003e\u003cp\u003e\u003cb\u003eDifferentiated color: \u003c/b\u003e\u003c/p\u003e\u003cul\u003e\u003cli\u003eThe red dye facilitates the control of the application.\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:19:10"
+    },
+    {
+        "slug":  "prosil",
+        "name":  "Prosil",
+        "group":  "Dental Material",
+        "brand":  "FGM",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/prosil2.webp",
+        "gallery":  [
+                        "/images/products/prosil.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eSolution for use as a chemical bonding agent for adhesion processes and pieces made of ceramic, ceromer and laboratory resin, and fiberglass posts.\u003c/p\u003e\u003cul\u003e\u003cli\u003eHigh adhesiveness\u003c/li\u003e\u003cli\u003eEasy use\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:19:12"
+    },
+    {
+        "slug":  "rcs-rainbow-one",
+        "name":  "RCS RAINBOW ONE",
+        "group":  "Dental Material",
+        "brand":  "RAMO",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/rcs-rainbow-one.webp",
+        "gallery":  [
+                        "/images/products/rcs-rainbow-one2.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eInfo Rainbow file  kit\u003c/p\u003e\u003cp\u003eFor Assorted:\u003c/p\u003e\u003cul\u003e\u003cli\u003e1-Sx open file\u003c/li\u003e\u003cli\u003e3-Rcs 20/0.04mm\u003c/li\u003e\u003cli\u003e4-Rcs 25/0.04mm\u003c/li\u003e\u003cli\u003e5-Rcs 30/0.04mm\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:32:15"
+    },
+    {
+        "slug":  "rcs-gold",
+        "name":  "RCS Gold",
+        "group":  "Dental Material",
+        "brand":  "RAMO",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/rcs-gold.webp",
+        "gallery":  [
+                        "/images/products/rcs-gold2.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eInfo RCS GOLD\u003c/p\u003e\u003cul\u003e\u003cli\u003e1- Opener 17/08\u003c/li\u003e\u003cli\u003e2- path 13/03\u003c/li\u003e\u003cli\u003e3- RCS 20/04\u003c/li\u003e\u003cli\u003e4- RCS 25/04\u003c/li\u003e\u003cli\u003e5- RCS 30/04\u003c/li\u003e\u003cli\u003e6- RCS 35/04\u003c/li\u003e\u003cli\u003e1- Opener 17/08\u003c/li\u003e\u003cli\u003e2- RCS 20/04\u003c/li\u003e\u003cli\u003e3- RCS 25/06\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:34:26"
+    },
+    {
+        "slug":  "rcs-k-file",
+        "name":  "RCS k FILE",
+        "group":  "Dental Material",
+        "brand":  "RAMO",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/rcs-k-file.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cul\u003e\u003cli\u003eSK 0203 C02006 25 order =  100\u003c/li\u003e\u003cli\u003eSK 0203 C02008 25  order = 150\u003c/li\u003e\u003cli\u003eSK 0203 C02010 25  order = 500\u003c/li\u003e\u003cli\u003eSK 0203 C02015 25  order = 300\u003c/li\u003e\u003cli\u003eSK 0203 C02010 31  order = 75\u003c/li\u003e\u003cli\u003eSK 0203 C02015 31  order = 75\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:34:29"
+    },
+    {
+        "slug":  "rcs-shape-d-file",
+        "name":  "RCS Shape D FILE",
+        "group":  "Dental Material",
+        "brand":  "RAMO",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/rcs-shape-d-file.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cul\u003e\u003cli\u003eSize  8   25mm  order = 100\u003c/li\u003e\u003cli\u003eSize 10    25mm order = 150\u003c/li\u003e\u003cli\u003eSize 15  25 mm order = 100\u003c/li\u003e\u003cli\u003eAssorted 8/10/1525 mm order = 50\u003c/li\u003e\u003c/ul\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:34:31"
+    },
+    {
+        "slug":  "rcs-prop-s",
+        "name":  "RCS Prop S",
+        "group":  "Dental Material",
+        "brand":  "RAMO",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/rcs-prop-s.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eDoble side vente\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:34:33"
+    },
+    {
+        "slug":  "endoseal",
+        "name":  "Endoseal",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/endoseal.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:40:37"
+    },
+    {
+        "slug":  "alvocure",
+        "name":  "Alvocure",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/alvocure.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003e\u003ci\u003ePengha\u003c/i\u003e\u003c/b\u003e \u003cb\u003e\u003ci\u003elodoform\u003c/i\u003e\u003c/b\u003e\u003cb\u003e\u003ci\u003e Paste\u003c/i\u003e\u003c/b\u003e\u003c/p\u003e\u003cp\u003eAlvocure is a dry socket treatment and post-extraction dressing. It provides a soothing effect throughout the healing process. Its fibrous consistency allows for easy filling of the socket. The active agents are eugenol, butamben, and iodoform.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:42:38"
+    },
+    {
+        "slug":  "polymer-reinforced-zoe",
+        "name":  "Polymer Reinforced ZOE",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/polymer-reinforced-zoe-.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eIntermediate Restorative Material (IRM) for class I and class II restorations\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:42:41"
+    },
+    {
+        "slug":  "micron-superior",
+        "name":  "Micron Superior",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/micron-superior.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003e\u003ci\u003eAesthetic Fine Particle Glass \u003c/i\u003e\u003c/b\u003e\u003cb\u003e\u003ci\u003elonomer\u003c/i\u003e\u003c/b\u003e\u003cb\u003e\u003ci\u003e Restorative Material\u003c/i\u003e\u003c/b\u003e\u003c/p\u003e\u003cp\u003eGlass ionomer restorative self-cure in hand mix version for restoration of primary teeth, core build up.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:42:43"
+    },
+    {
+        "slug":  "spectra-200gram",
+        "name":  "Spectra 200Gram",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/spectra-min.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003e\u003ci\u003eProphylaxis Paste\u003c/i\u003e\u003c/b\u003e\u003c/p\u003e\u003cp\u003eSpectra is an abrasive paste used for polishing and fluoridation after scaling. Its mechanical action produces a smooth surface without eroding the dental enamel. It is also used for polishing fillings and removal of tobacco \u0026amp; food stains. Spectra Minty is mint flavored, producing a fresh, pleasant tingling sensation, relieving the irritation caused by the mechanical action of the scaling.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:42:46"
+    },
+    {
+        "slug":  "spectra-75gram",
+        "name":  "Spectra 75Gram",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/spectra-75gram.webp",
+        "gallery":  [
+                        "/images/products/spectra-75gram2.webp"
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003e\u003ci\u003eProphylaxis Paste\u003c/i\u003e\u003c/b\u003e\u003c/p\u003e\u003cp\u003eSpectra is an abrasive paste used for polishing and fluoridation after scaling. Its mechanical action produces a smooth surface without eroding the dental enamel. It is also used for polishing fillings and removal of tobacco \u0026amp; food stains. Spectra Minty is mint flavored that produces a fresh, pleasant tingling sensation and relieves the irritation caused by the mechanical action of the scaling.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:47:03"
+    },
+    {
+        "slug":  "camphorated-para-chlorophenol-solution",
+        "name":  "Camphorated Para Chlorophenol Solution",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/camphorated-para-chlorophenol-solution.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eActive disinfectant for the treatment of infected root canals and periapical infections.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:47:06"
+    },
+    {
+        "slug":  "formacresol-endodontics",
+        "name":  "Formacresol Endodontics",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/formacresol-endodontics.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003e\u003ci\u003eTricresol Formaldehyde Solution\u003c/i\u003e\u003c/b\u003e\u003c/p\u003e\u003cp\u003ePowerful pulp devitalizer and disinfectant for severely infected root canals.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:47:08"
+    },
+    {
+        "slug":  "reveal-caries-detector",
+        "name":  "Reveal Caries Detector",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/reveal.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003eVisual differentiation between infected carious dentine \u0026amp; sound, re-mineralizable dentine by its ability to selectively dye the carious dentine\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:47:10"
+    },
+    {
+        "slug":  "orafil-g-temporaries",
+        "name":  "Orafil-G Temporaries",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/orafil-g-temporaries.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003e\u003ci\u003eTemporary Filling Material\u003c/i\u003e\u003c/b\u003e\u003c/p\u003e\u003cp\u003eReady-to-use zinc sulphate cement for provisional filling and temporary insertion of permanent crowns and bridges\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:47:12"
+    },
+    {
+        "slug":  "orafil-plus-temporaries",
+        "name":  "Orafil Plus Temporaries",
+        "group":  "Dental Material",
+        "brand":  "Prevest DenePro",
+        "categories":  [
+
+                       ],
+        "comingSoon":  false,
+        "featured":  false,
+        "price":  null,
+        "originalWpPrice":  "32",
+        "sku":  null,
+        "inStock":  true,
+        "image":  "/images/products/orafil-plus-temporaries.webp",
+        "gallery":  [
+
+                    ],
+        "summary":  "",
+        "description":  "\u003cp\u003e\u003cb\u003e\u003ci\u003eTemporary Filling Material with Sodium Fluoride\u003c/i\u003e\u003c/b\u003e\u003c/p\u003e\u003cp\u003eReady to use zinc sulphate cement for provisional filling and temporary insertion of permanent crowns and bridges.\u003c/p\u003e",
+        "tags":  [
+
+                 ],
+        "order":  0,
+        "date":  "2023-07-19 11:47:14"
+    }
+]

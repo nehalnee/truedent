@@ -1,0 +1,396 @@
+---
+import Base from '../layouts/Base.astro';
+import ProductCard from '../components/ProductCard.astro';
+import Icon from '../components/Icon.astro';
+import site from '../data/site.json';
+import { products, featured, facets, GROUPS } from '../lib/catalog';
+
+const equipmentTypes = facets('Dental Equipment');
+const materialBrands = facets('Dental Material');
+const counts = {
+  equipment: products.filter((p) => p.group === 'Dental Equipment').length,
+  materials: products.filter((p) => p.group === 'Dental Material').length,
+};
+const showcase = featured.slice(0, 8);
+---
+
+<Base>
+  <section class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow">Dental supplies · Libya</span>
+        <h1>Enhancing smiles, empowering dentistry.</h1>
+        <p class="lead">
+          Your one-stop destination for premium dental equipment and materials. A carefully curated range that
+          caters to every dentist's needs, delivered across Libya from {site.city.split(',')[0]}.
+        </p>
+        <div class="hero-cta">
+          <a href="/products" class="btn btn-primary">Browse products <Icon name="arrow" /></a>
+          <a href={`https://wa.me/${site.whatsapp}`} class="btn btn-ghost" target="_blank" rel="noopener">
+            <Icon name="whatsapp" /> Chat on WhatsApp
+          </a>
+        </div>
+        <dl class="stats">
+          <div><dt>{products.length}</dt><dd>Products</dd></div>
+          <div><dt>{materialBrands.length}</dt><dd>Material brands</dd></div>
+          <div><dt>{equipmentTypes.length}</dt><dd>Equipment types</dd></div>
+        </dl>
+      </div>
+      <div class="hero-media">
+        <img src="/images/site/untitled-design.webp" alt="DPEX V apex locator, D600 scaler, Implanter and Endo motor" width="1176" height="1154" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="groups">
+        {GROUPS.map((g) => (
+          <a href={`/products/${g.key}`} class:list={['group', g.key]}>
+            <span class="eyebrow">{counts[g.key]} products</span>
+            <h2>{'label' in g ? g.label : g.name}</h2>
+            <p>{g.blurb}</p>
+            <span class="go">Shop {g.key} <Icon name="arrow" /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Hot items</span>
+          <h2>Popular with our dentists</h2>
+        </div>
+        <a href="/products" class="btn btn-ghost">View all products <Icon name="arrow" /></a>
+      </div>
+      <div class="grid">
+        {showcase.map((p) => <ProductCard product={p} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Equipment</span>
+          <h2>Find equipment by type</h2>
+        </div>
+      </div>
+      <div class="chips">
+        {equipmentTypes.map((t) => (
+          <a href={`/products/equipment?type=${t.slug}`} class="chip">
+            {t.name} <span>{t.count}</span>
+          </a>
+        ))}
+      </div>
+      <div class="brands">
+        <span class="eyebrow">Material brands we carry</span>
+        <div class="brand-row">
+          {materialBrands.map((b) => (
+            <a href={`/products/materials?type=${b.slug}`} class="brand">{b.name}</a>
+          ))}
+          <span class="brand">Woodpecker</span>
+          <span class="brand">DTE</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section how">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">How ordering works</span>
+          <h2>Three steps, no account needed</h2>
+        </div>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="num">1</span>
+          <h3>Build your list</h3>
+          <p>Add the equipment and materials you need to your quote list, with quantities.</p>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <h3>Send it on WhatsApp</h3>
+          <p>One tap sends the full list to our team. You can also call us directly.</p>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <h3>Get price &amp; delivery</h3>
+          <p>We confirm current prices and availability, and arrange delivery to your clinic.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section about">
+    <div class="wrap about-inner">
+      <img src="/images/site/ozkan-guner-fpsaa37uh_w-unsplash-min-scaled.webp" alt="Dental unit handpieces in a clinic" loading="lazy" width="1920" height="1280" />
+      <div>
+        <span class="eyebrow">About us</span>
+        <h2>Built for dental professionals in Libya</h2>
+        <p class="lead">{site.description}</p>
+        <a href="/about" class="btn btn-primary">More about TrueDent <Icon name="arrow" /></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Need something that isn't listed?</h2>
+        <p>Tell us what your clinic needs. We source dental materials and equipment on request.</p>
+      </div>
+      <div class="cta-actions">
+        <a href={`https://wa.me/${site.whatsapp}`} class="btn btn-whatsapp" target="_blank" rel="noopener"><Icon name="whatsapp" /> WhatsApp us</a>
+        <a href={`tel:${site.phones[0].tel}`} class="btn btn-light"><Icon name="phone" /> {site.phones[0].display}</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    background:
+      radial-gradient(900px 500px at 85% 20%, rgb(35 178 159 / 0.14), transparent 60%),
+      linear-gradient(180deg, #fff, var(--bg));
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-inner {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+    padding-block: clamp(40px, 7vw, 88px);
+  }
+  .hero-copy h1 {
+    max-width: 14ch;
+  }
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2rem 0 2.5rem;
+  }
+  .stats {
+    display: flex;
+    gap: clamp(1.5rem, 4vw, 3rem);
+    margin: 0;
+  }
+  .stats dt {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--brand);
+  }
+  .stats dd {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .hero-media img {
+    border-radius: 24px;
+    box-shadow: 0 30px 60px -30px rgb(12 85 96 / 0.45);
+  }
+  @media (max-width: 860px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+    }
+    .hero-media {
+      order: -1;
+      max-width: 520px;
+    }
+  }
+
+  .groups {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  @media (max-width: 720px) {
+    .groups {
+      grid-template-columns: 1fr;
+    }
+  }
+  .group {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(24px, 4vw, 40px);
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    min-height: 240px;
+    transition: transform 0.2s;
+  }
+  .group:hover {
+    transform: translateY(-3px);
+  }
+  .group.equipment {
+    background: linear-gradient(140deg, var(--brand), var(--brand-dark));
+  }
+  .group.materials {
+    background: linear-gradient(140deg, #17907f, #0e6b62);
+  }
+  .group .eyebrow {
+    color: #9fe6da;
+  }
+  .group p {
+    color: rgb(255 255 255 / 0.8);
+    max-width: 42ch;
+  }
+  .go {
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: 700;
+  }
+  .go :global(svg) {
+    width: 1.1em;
+    height: 1.1em;
+  }
+
+  .featured {
+    background: #fff;
+    border-block: 1px solid var(--line);
+  }
+
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  .chip span {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .chip:hover {
+    border-color: var(--accent);
+    color: var(--brand);
+  }
+  .brands {
+    margin-top: 3rem;
+  }
+  .brand-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 12px;
+  }
+  .brand {
+    display: grid;
+    place-items: center;
+    height: 72px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid var(--line);
+    font-weight: 800;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+  }
+  a.brand:hover {
+    color: var(--brand);
+    border-color: var(--accent);
+  }
+
+  .how {
+    background: var(--accent-soft);
+  }
+  .steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  @media (max-width: 760px) {
+    .steps {
+      grid-template-columns: 1fr;
+    }
+  }
+  .steps li {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 28px;
+  }
+  .steps p {
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .num {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--brand);
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 4rem);
+    align-items: center;
+  }
+  .about-inner img {
+    border-radius: 20px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    width: 100%;
+  }
+  .about-inner .lead {
+    margin-bottom: 1.75rem;
+  }
+  @media (max-width: 760px) {
+    .about-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .cta {
+    background: var(--brand);
+    color: #fff;
+    padding-block: 56px;
+  }
+  .cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .cta h2 {
+    margin-bottom: 0.3rem;
+  }
+  .cta p {
+    margin: 0;
+    color: rgb(255 255 255 / 0.8);
+  }
+  .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+</style>

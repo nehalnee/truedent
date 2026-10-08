@@ -1,0 +1,13 @@
+{
+  "name": "TrueDent",
+  "tagline": "Dental materials & equipment in Libya",
+  "description": "TrueDent is one of the first specialized sites in the sale of dental materials and equipment in Libya, we strive to provide a unique experience in online shopping and meet the needs of dentists.",
+  "city": "Benghazi, Libya",
+  "currency": "LYD",
+  "whatsapp": "218911783333",
+  "phones": [
+    { "display": "091-1783333", "tel": "+218911783333" },
+    { "display": "094-4594537", "tel": "+218944594537" }
+  ],
+  "email": "trudent@truedent.ly"
+}

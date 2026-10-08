@@ -1,0 +1,14 @@
+---
+import Base from '../../layouts/Base.astro';
+import Listing from '../../components/Listing.astro';
+import { products } from '../../lib/catalog';
+---
+
+<Base title="All products" description="Dental equipment and materials available from TrueDent in Libya.">
+  <Listing
+    title="All products"
+    intro="Our full range of dental equipment and materials. Add what you need to your quote list and send it to us on WhatsApp."
+    items={products}
+    facetLabel="type or brand"
+  />
+</Base>

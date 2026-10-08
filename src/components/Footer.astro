@@ -1,0 +1,118 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import site from '../data/site.json';
+import { facets } from '../lib/catalog';
+
+const equipment = facets('Dental Equipment').slice(0, 6);
+const brands = facets('Dental Material');
+---
+
+<footer class="footer">
+  <div class="wrap cols">
+    <div class="about">
+      <Logo light />
+      <p>{site.description}</p>
+    </div>
+    <div>
+      <h3>Equipment</h3>
+      <ul>
+        {equipment.map((f) => <li><a href={`/products/equipment?type=${f.slug}`}>{f.name}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h3>Material brands</h3>
+      <ul>
+        {brands.map((f) => <li><a href={`/products/materials?type=${f.slug}`}>{f.name}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <ul class="contact">
+        {site.phones.map((p) => (
+          <li><Icon name="phone" /><a href={`tel:${p.tel}`}>{p.display}</a></li>
+        ))}
+        <li><Icon name="whatsapp" /><a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener">WhatsApp</a></li>
+        <li><Icon name="mail" /><a href={`mailto:${site.email}`}>{site.email}</a></li>
+        <li><Icon name="pin" /><span>{site.city}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap bottom">
+    <span>© {new Date().getFullYear()} {site.name}. All rights reserved.</span>
+    <span>Product names and logos belong to their respective manufacturers.</span>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--brand-dark);
+    color: #b9d3cf;
+    padding-top: 64px;
+    font-size: 0.93rem;
+  }
+  .cols {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: 2.5rem;
+  }
+  @media (max-width: 860px) {
+    .cols {
+      grid-template-columns: 1fr 1fr;
+    }
+    .about {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (max-width: 460px) {
+    .cols {
+      grid-template-columns: 1fr;
+    }
+  }
+  .about p {
+    max-width: 38ch;
+    margin-top: 1rem;
+  }
+  h3 {
+    color: #fff;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+  a {
+    color: #e6f2f0;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .contact li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .contact :global(svg) {
+    width: 1rem;
+    height: 1rem;
+    color: var(--accent);
+    flex: none;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 48px;
+    padding-block: 1.5rem;
+    border-top: 1px solid rgb(255 255 255 / 0.1);
+    font-size: 0.82rem;
+    color: #8fb1ac;
+  }
+</style>

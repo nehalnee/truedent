@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import Listing from '../../components/Listing.astro';
+import { products, GROUPS } from '../../lib/catalog';
+
+export function getStaticPaths() {
+  return GROUPS.map((g) => ({ params: { group: g.key }, props: { group: g } }));
+}
+
+const { group } = Astro.props;
+const title = 'label' in group ? group.label : group.name;
+const items = products.filter((p) => p.group === group.name);
+---
+
+<Base title={title} description={group.blurb}>
+  <Listing
+    title={title}
+    intro={group.blurb}
+    items={items}
+    facetLabel={group.key === 'equipment' ? 'equipment type' : 'brand'}
+  />
+</Base>
