@@ -1,8 +1,9 @@
 ---
+import { u, stripBase } from '../lib/url';
 import Logo from './Logo.astro';
 import Icon from './Icon.astro';
 
-const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const path = stripBase(Astro.url.pathname).replace(/\/$/, '') || '/';
 const left = [
   { href: '/products/equipment', label: 'Equipment' },
   { href: '/products/materials', label: 'Materials' },
@@ -19,19 +20,19 @@ const isActive = (href: string) => (href === '/products' ? path === href : path.
   <div class="wrap header-inner">
     <nav class="nav nav-left" aria-label="Products">
       {left.map((l) => (
-        <a href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
+        <a href={u(l.href)} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
       ))}
     </nav>
 
-    <a href="/" class="home" aria-label="TrueDent home"><Logo /></a>
+    <a href={u('/')} class="home" aria-label="TrueDent home"><Logo /></a>
 
     <div class="nav-right">
       <nav class="nav" aria-label="Company">
         {right.map((l) => (
-          <a href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
+          <a href={u(l.href)} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
         ))}
       </nav>
-      <a href="/quote" class="quote-link" aria-label="Quote list">
+      <a href={u('/quote')} class="quote-link" aria-label="Quote list">
         <Icon name="cart" />
         <span class="quote-text">Quote</span>
         <span class="count" data-quote-count hidden>0</span>
@@ -44,7 +45,7 @@ const isActive = (href: string) => (href === '/products' ? path === href : path.
 
   <nav class="mobile-nav" id="mobile-nav" aria-label="Main">
     {[...left, ...right].map((l) => (
-      <a href={l.href} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
+      <a href={u(l.href)} aria-current={isActive(l.href) ? 'page' : undefined}>{l.label}</a>
     ))}
   </nav>
 </header>

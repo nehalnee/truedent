@@ -1,4 +1,5 @@
 ---
+import { u } from '../../lib/url';
 import Base from '../../layouts/Base.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import Icon from '../../components/Icon.astro';
@@ -33,8 +34,8 @@ const jsonLd = {
 <Base title={p.name} description={description} image={p.image}>
   <div class="wrap page">
     <nav class="crumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a> / <a href={`/products/${groupKey(p)}`}>{groupLabel}</a> /
-      <a href={`/products/${groupKey(p)}?type=${slugify(facet)}`}>{facet}</a>
+      <a href={u('/')}>Home</a> / <a href={u(`/products/${groupKey(p)}`)}>{groupLabel}</a> /
+      <a href={u(`/products/${groupKey(p)}?type=${slugify(facet)}`)}>{facet}</a>
     </nav>
 
     <div class="layout">

@@ -1,4 +1,5 @@
 ---
+import { u } from '../lib/url';
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import site from '../data/site.json';
@@ -20,7 +21,7 @@ const index = Object.fromEntries(products.map((p) => [p.slug, { name: p.name, im
         <ul class="items" data-items></ul>
         <div class="empty" data-empty hidden>
           <p>Your list is empty.</p>
-          <a href="/products" class="btn btn-primary">Browse products <Icon name="arrow" /></a>
+          <a href={u('/products')} class="btn btn-primary">Browse products <Icon name="arrow" /></a>
         </div>
       </div>
 
@@ -58,6 +59,7 @@ const index = Object.fromEntries(products.map((p) => [p.slug, { name: p.name, im
 
 <script>
   import { readQuote, writeQuote, whatsappLink } from '../scripts/quote';
+  import { u } from '../lib/url';
 
   const { index, whatsapp } = (window as any).__quote as {
     index: Record<string, { name: string; image: string }>;
@@ -84,7 +86,7 @@ const index = Object.fromEntries(products.map((p) => [p.slug, { name: p.name, im
           </button>`;
         li.querySelector('img')!.src = info.image;
         const link = li.querySelector<HTMLAnchorElement>('.name')!;
-        link.href = `/product/${item.slug}`;
+        link.href = u(`/product/${item.slug}`);
         link.textContent = info.name;
         const qty = li.querySelector('input')!;
         qty.value = String(item.qty);

@@ -1,4 +1,5 @@
 ---
+import { u } from '../lib/url';
 import Icon from './Icon.astro';
 import site from '../data/site.json';
 import { facets } from '../lib/catalog';
@@ -23,24 +24,24 @@ const brands = facets('Dental Material');
       <div>
         <h3>Shop</h3>
         <ul>
-          <li><a href="/products/equipment">Equipment</a></li>
-          <li><a href="/products/materials">Materials</a></li>
-          <li><a href="/products">All products</a></li>
-          <li><a href="/quote">Quote list</a></li>
+          <li><a href={u('/products/equipment')}>Equipment</a></li>
+          <li><a href={u('/products/materials')}>Materials</a></li>
+          <li><a href={u('/products')}>All products</a></li>
+          <li><a href={u('/quote')}>Quote list</a></li>
         </ul>
       </div>
       <div>
         <h3>Equipment</h3>
         <ul>
-          {equipment.map((f) => <li><a href={`/products/equipment?type=${f.slug}`}>{f.name}</a></li>)}
+          {equipment.map((f) => <li><a href={u(`/products/equipment?type=${f.slug}`)}>{f.name}</a></li>)}
         </ul>
       </div>
       <div>
         <h3>Brands</h3>
         <ul>
-          {brands.map((f) => <li><a href={`/products/materials?type=${f.slug}`}>{f.name}</a></li>)}
-          <li><a href="/about">About us</a></li>
-          <li><a href="/contact">Contact</a></li>
+          {brands.map((f) => <li><a href={u(`/products/materials?type=${f.slug}`)}>{f.name}</a></li>)}
+          <li><a href={u('/about')}>About us</a></li>
+          <li><a href={u('/contact')}>Contact</a></li>
         </ul>
       </div>
     </nav>

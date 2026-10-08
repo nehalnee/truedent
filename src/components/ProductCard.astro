@@ -1,4 +1,5 @@
 ---
+import { u } from '../lib/url';
 import Icon from './Icon.astro';
 import { facetOf, formatPrice, slugify, type Product } from '../lib/catalog';
 
@@ -10,13 +11,13 @@ const facet = facetOf(p);
 ---
 
 <article class="card" data-facet={slugify(facet)}>
-  <a href={`/product/${p.slug}`} class="media">
+  <a href={u(`/product/${p.slug}`)} class="media">
     <img src={p.image} alt={p.name} loading="lazy" width="400" height="400" />
     {p.comingSoon && <span class="badge badge-soon tag">Coming soon</span>}
   </a>
   <div class="body">
     <span class="facet">{facet}</span>
-    <h3><a href={`/product/${p.slug}`}>{p.name}</a></h3>
+    <h3><a href={u(`/product/${p.slug}`)}>{p.name}</a></h3>
     <div class="foot">
       <span class="price">{formatPrice(p.price)}</span>
       {!p.comingSoon && (

@@ -2,6 +2,17 @@
 
 Website for **TrueDent**, a dental materials and equipment supplier in Benghazi, Libya.
 
+**Live demo: [nehalnee.github.io/truedent](https://nehalnee.github.io/truedent/)**
+
+![TrueDent home page](docs/home.webp)
+
+<details>
+<summary>Product page</summary>
+
+![TrueDent product page](docs/product.webp)
+
+</details>
+
 This is a rebuild of the original WordPress/WooCommerce site (truedent.ly, backed up July 2023) as a fast
 static site with [Astro](https://astro.build). The products, photos, categories and page text were recovered
 from that backup.
@@ -46,3 +57,8 @@ It converts them to compact WebP and updates the references in `products.json`.
 
 The build output in `dist/` is plain HTML/CSS/JS, so it can be hosted anywhere: Netlify, Vercel,
 Cloudflare Pages, GitHub Pages, or any web server. Point the `truedent.ly` domain at it.
+
+The demo is deployed to GitHub Pages automatically on every push to `main`
+(see `.github/workflows/deploy.yml`). Because Pages serves it from a sub-folder, that build sets
+`BASE_PATH=/truedent`; on a real domain leave it unset. Use the `u()` helper from `src/lib/url.ts`
+for any new internal link or image path so it works in both places.

@@ -1,4 +1,5 @@
 ---
+import { u } from '../lib/url';
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import site from '../data/site.json';
@@ -13,7 +14,7 @@ import { products, brands, facets } from '../lib/catalog';
         <h1>A specialist dental supplier, built for Libyan clinics.</h1>
         <p class="lead">{site.description}</p>
       </div>
-      <img src="/images/site/ozkan-guner-fpsaa37uh_w-unsplash-min-scaled.webp" alt="Dental unit handpieces in a clinic" width="1920" height="1280" />
+      <img src={u('/images/site/ozkan-guner-fpsaa37uh_w-unsplash-min-scaled.webp')} alt="Dental unit handpieces in a clinic" width="1920" height="1280" />
     </div>
   </section>
 
@@ -44,7 +45,7 @@ import { products, brands, facets } from '../lib/catalog';
   <section class="wrap cta">
     <h2>Ready to equip your clinic?</h2>
     <div class="actions">
-      <a href="/products" class="btn btn-light">Browse products <Icon name="arrow" /></a>
+      <a href={u('/products')} class="btn btn-light">Browse products <Icon name="arrow" /></a>
       <a href={`https://wa.me/${site.whatsapp}`} class="btn btn-whatsapp" target="_blank" rel="noopener"><Icon name="whatsapp" /> WhatsApp us</a>
     </div>
   </section>

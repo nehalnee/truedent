@@ -1,4 +1,5 @@
 import raw from '../data/products.json';
+import { u } from './url';
 
 export interface Product {
   slug: string;
@@ -49,6 +50,8 @@ export const slugify = (s: string) =>
 
 export const products: Product[] = (raw as any[]).map((p) => ({
   ...p,
+  image: u(p.image),
+  gallery: p.gallery.map(u),
   price: p.price ?? null,
   categories: [...new Set<string>(p.categories.map((c: string) => CATEGORY_NAMES[c] ?? c))],
 }));
